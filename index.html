@@ -9,6 +9,25 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>Test site</title>
+    
+	<script type="text/javascript">
+	    (function () {
+	        var c = { 'name': 'cp', 'args': ['', 0, 'scn', 0, 'ngtrk.com', 0, null] };
+	        if (typeof CKMLib == 'object')
+	            CKMLib.run(c);
+	        else {
+	            (_ckm = window._ckm || []).push(c);
+	            if (typeof CKMLib != 'string') {
+	                CKMLib = 'loading';
+	                var pix = document.createElement('script');
+	                pix.type = 'text/javascript'; pix.async = true;
+	                pix.src = '//cdn.cakemarketing.com/jssdk/lib.js';
+	                var s = document.getElementsByTagName('script')[0];
+	                s.parentNode.insertBefore(pix, s);
+	            }
+	        }
+	    })();
+	</script>
   </head>
 
   <body>
@@ -20,11 +39,6 @@
 
           <h1 id="project_title">Test site</h1>
           <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ThatEric/test_site/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ThatEric/test_site/tarball/master">Download this project as a tar.gz file</a>
-            </section>
         </header>
     </div>
 
@@ -34,7 +48,7 @@
         <h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Hello World!</p>
 
 <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
